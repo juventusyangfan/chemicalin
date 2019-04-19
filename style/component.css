@@ -4,19 +4,94 @@
     background-color: #122a88;
     color: #fff;
 }
-.ci-top-con{
+.ci-top-warp .ci-top-con{
     width: 1400px;
     margin: 0 auto;
+    background-color: #122a88;
 }
-.ci-top-warp i{
+.ci-top-con > span{
+    height: 30px;
+}
+.ci-top-con i{
     display: inline-block;
     margin-right: 2px;
     font-size: 14px;
 }
-.ci-top-warp i.iconzhifeiji{
+.ci-top-con i.iconzhifeiji{
     vertical-align: -1px;
 }
-.ci-top-warp i.iconcheck,.ci-top-warp i.iconinfo-circle-fill{
+.ci-top-con i.iconcheck,.ci-top-con i.iconinfo-circle-fill{
     margin-right: 6px;
     font-size: 12px;
+}
+.ci-top-con a{
+    color: #fff;
+}
+
+.ci-menu-warp{
+    width: 1360px;
+    height: 80px;
+    padding: 0 20px;
+}
+.ci-menu-warp .ci-logo{
+    display: inline-block;
+    width: 180px;
+    height: 29px;
+    margin-top: 25px;
+    margin-right: 38px;
+    background: url(../imgs/logo.png) no-repeat;
+    float: left;
+}
+.ci-menu-list{
+    float: left;
+}
+.ci-menu-list li{
+    height: 80px;
+    line-height: 80px;
+    margin-left: 60px;
+    float: left;
+}
+.ci-menu-list li.act a,.ci-menu-list li a:hover{
+    color: #3c60ec;
+}
+.ci-menu-search{
+    width: 400px;
+    height: 42px;
+    margin-top: 18px;
+    border: solid 1px #7a7879;
+    float: right;
+}
+.ci-menu-search input{
+    width: 310px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    border: none;
+}
+.ci-menu-search .ci-menu-search-btn{
+    display: inline-block;
+    width: 69px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 9px;
+    border-left: solid 1px #DAD5D1;
+    text-align: center;
+    float: right;
+}
+.ci-menu-search .ci-menu-search-btn i{
+    font-size: 26px;
+    color: #7a7879;
+}
+
+.ci-menu-warp .ci-menu-btn{
+    display: inline-block;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 18px;
+    margin-left: 15px;
+    background-color: #7e308e;
+    color: #fff;
+    float: right;
+    text-align: center;
 }

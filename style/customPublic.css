@@ -10,11 +10,11 @@ body {
 }
 
 a{
-    color: #fff;
+    color: #333;
     text-decoration: none;
 }
 a:hover{
-    color: #fc6940;
+    color: #3c60ec;
 }
 
 input,select,textarea,table {
