@@ -1,0 +1,92 @@
+/**基础样式**/
+body {
+    min-width: 1200px;
+    font-size:12px;
+    line-height:1.2;
+    padding:0;
+    margin:0;
+    font-family:'roboto','Microsoft YaHei','simsun';
+    color: #666666;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fc6940;
+}
+
+input,select,textarea,table {
+    font-size:14px;
+    font-family:'Microsoft YaHei','simsun';
+}
+
+table {
+    margin:0 auto;
+}
+
+.floatL {
+    float:left;
+}
+
+.floatR {
+    float:right;
+}
+.clear {
+    clear:both;
+    height:0;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+}
+.clearBorder{
+    border: none!important;
+}
+
+.clearFloat {
+    clear:both;
+    overflow:hidden;
+}
+/* 用于浮动元素的父元素 */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*兼容IE6、7*/
+.clearfix {
+    *zoom:1;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+
+/* 偏移量margin */
+.marginL4{
+    margin-left: 4px;
+}
+.marginR4{
+    margin-right: 4px;
+}
+.marginR16{
+    margin-right: 16px;
+}
+.marginR24{
+    margin-right: 24px;
+}
+
+/**限制显示省略号**/
+.ellipsis{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}

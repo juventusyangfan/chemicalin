@@ -1,0 +1,22 @@
+.ci-top-warp{
+    height: 30px;
+    line-height: 30px;
+    background-color: #122a88;
+    color: #fff;
+}
+.ci-top-con{
+    width: 1400px;
+    margin: 0 auto;
+}
+.ci-top-warp i{
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 14px;
+}
+.ci-top-warp i.iconzhifeiji{
+    vertical-align: -1px;
+}
+.ci-top-warp i.iconcheck,.ci-top-warp i.iconinfo-circle-fill{
+    margin-right: 6px;
+    font-size: 12px;
+}
