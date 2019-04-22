@@ -19,16 +19,19 @@
     padding: 16px;
 }
 .ci-faq-list dl{
-    height: 21px;
+    max-height: 21px;
+    margin-top: 30px;
     overflow: hidden;
-    transition: all .2s;
+    transition: all .3s ease-in;
+}
+.ci-faq-list dl:first-child{
+    margin-top: 10px;
+}
+.ci-faq-list dl.act{
+    max-height: 500px;
 }
 .ci-faq-list dt{
-    margin-top: 30px;
     font-size: 18px;
-}
-.ci-faq-list dl:first-child dt{
-    margin-top: 0;
 }
 .ci-faq-list dt i{
     margin-right: 12px;

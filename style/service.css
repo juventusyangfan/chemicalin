@@ -1,48 +1,52 @@
-.ci-contactUs-banner{
+.ci-service-banner{
     height: 165px;
-    background: url(../imgs/contact_us/banner.png) 50% no-repeat;
+    background: url(../imgs/service/banner.png) 50% no-repeat;
     background-size: cover;
     margin: 0 auto;
 }
-.ci-contactUs-wrap{
+.ci-service-wrap{
     width: 1198px;
     margin: 4px auto;
+    padding-bottom: 120px;
     border: solid 1px #EFEFEF;
 }
-.ci-contactUs-con{
+.ci-service-con{
     width: 700px;
     padding: 30px 20px;
     float: left;
 }
-.ci-contactUs-con .ci-contactUs-item{
-    margin-top: 80px;
-}
-.ci-contactUs-con .ci-contactUs-item:first-child{
-    margin-top: 0;
-}
-.ci-contactUs-con .ci-contactUs-title{
+.ci-service-con .ci-service-title{
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: bolder;
     color: #122A88;
 }
-.ci-contactUs-con .ci-contactUs-des{
+.ci-service-con .ci-service-des{
     line-height: 1.5;
     font-size: 16px;
 }
-.ci-contactUs-con .ci-contactUs-des p{
+.ci-service-con .ci-service-des p{
     margin-bottom: 20px;
 }
-.ci-contactUs-form{
+
+.ci-service-form,.ci-service-info{
+    border: solid 1px #E4E4E4;
+    float: right;
+}
+.ci-service-form{
     width: 384px;
     height: 394px;
     margin-top: 8px;
     margin-right: 8px;
     background-color: #F9F9F9;
-    border: solid 1px #E4E4E4;
-    float: right;
 }
-.ci-contactUs-form .ci-contactUs-form-title{
+.ci-service-info{
+    width: 300px;
+    height: 252px;
+    margin-top: 20px;
+    margin-right: 92px;
+}
+.ci-service-form .ci-service-form-title,.ci-service-info .ci-service-info-title{
     height: 55px;
     line-height: 55px;
     padding: 0 16px;
@@ -50,12 +54,12 @@
     font-size: 14px;
     color: #fff;
 }
-.ci-contactUs-form .ci-contactUs-form-con{
+.ci-service-form .ci-service-form-con{
     height: 235px;
     height: 197px;
     padding: 23px;
 }
-.ci-contactUs-form-con input{
+.ci-service-form-con input{
     width: 308px;
     height: 38px;
     line-height: 38px;
@@ -64,17 +68,17 @@
     border: solid 1px #E4E4E4;
     border-radius: 4px;
 }
-.ci-contactUs-form-con input.input-shot{
+.ci-service-form-con input.input-shot{
     width: 138px;
 }
-.ci-contactUs-form-con textarea{
+.ci-service-form-con textarea{
     width: 308px;
     height: 65px;
     padding: 10px;
     background-color: #fff;
     border: solid 1px #ccc;
 }
-.ci-contactUs-form-con button{
+.ci-service-form-con button{
     display: block;
     width: 124px;
     height: 32px;
@@ -84,4 +88,25 @@
     font-size: 12px;
     color: #fff;
     text-align: center;
+}
+
+.ci-service-info-con .ci-service-info-item{
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.ci-service-info-con .ci-service-info-item:first-child{
+    margin-top: 16px;
+}
+.ci-service-info-con .ci-service-info-item i{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #e1e1e1;
+    vertical-align: -2px;
+}
+.ci-service-info-con  span.iconVIP{
+    margin-left: 2px;
+    font-size: 18px;
+    color: #FFA900;
+    vertical-align: -2px;
 }

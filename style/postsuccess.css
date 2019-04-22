@@ -1,0 +1,44 @@
+.ci-success-wrap{
+    width: 1198px;
+    height: 538px;
+    margin: 20px auto;
+    border: solid 1px #EFEFEF;
+}
+.ci-success-icon{
+    display: block;
+    width: 94px;
+    height: 94px;
+    margin: 100px  auto 40px auto;
+    background: url(../imgs/postsuccess/successIcon.png) no-repeat;
+}
+.ci-success-tips{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+.ci-success-des{
+    font-size: 14px;
+    text-align: center;
+}
+.ci-success-btns{
+    margin-top: 80px;
+    text-align: center;
+}
+.ci-success-btns a{
+    display: inline-block;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 10px;
+    text-align: center;
+}
+.ci-success-btns a.ci-success-btnBack{
+    margin-right: 40px;
+    background-color: #8A2D83;
+    color: #fff;
+}
+.ci-success-btns a.ci-success-btnGo{
+    background-color: #F5D9EF;
+    color: #8A2D83;
+}
