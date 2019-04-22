@@ -1,12 +1,12 @@
 /**基础样式**/
 body {
-    min-width: 1200px;
+    min-width: 1440px;
     font-size:12px;
     line-height:1.2;
     padding:0;
     margin:0;
     font-family:'roboto','Microsoft YaHei','simsun';
-    color: #666666;
+    color: #333;
 }
 
 a{
@@ -67,10 +67,24 @@ table {
 .block{
     display: block;
 }
-
+.bold{
+    font-weight: bolder;
+}
+.textC{
+    text-align: center;
+}
 /* 偏移量margin */
+.marginT20{
+    margin-top: 20px;
+}
 .marginL4{
     margin-left: 4px;
+}
+.marginL8{
+    margin-left: 8px;
+}
+.marginL70{
+    margin-left: 70px;
 }
 .marginR4{
     margin-right: 4px;
@@ -80,6 +94,19 @@ table {
 }
 .marginR24{
     margin-right: 24px;
+}
+
+/* 字号font-size */
+.fontSize10{
+    font-size: 10px;
+}
+.fontSize20{
+    font-size: 20px;
+}
+
+/* 文字颜色 */
+.textBlack8{
+    color: #808080;
 }
 
 /**限制显示省略号**/

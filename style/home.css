@@ -1,0 +1,158 @@
+/* banner */
+.ci-banner-wrap{
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+    position: relative;
+}
+.ci-banner-wrap .banner_bg{
+    height: 375px;
+    margin: 0 auto;
+}
+.slides_cell{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.banner_bg .banner_item{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 375px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel_dot {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    z-index: 1;
+}
+.carousel_dot .carousel_dot_span{
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.carousel_dot a.active{
+    opacity: 1;
+}
+
+/* 首页内容区域 */
+.ci-home-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ci-home-introduce{
+    padding: 0 50px;
+}
+.ci-home-introduce .ci-introduce-cell{
+    width: 270px;
+    margin-left: 145px;
+    padding: 60px 0 30px 0;
+    text-align: center;
+    float: left;
+}
+.ci-home-introduce .ci-introduce-cell:first-child{
+    margin-left: 0;
+}
+.ci-introduce-cell i{
+    display: block;
+    font-size: 24px;
+    color: #333;
+}
+.ci-introduce-cell .fontSize10{
+    line-height: 2;
+    text-align: center;
+}
+.ci-home-product{
+    background-color: #F4F3F3;
+}
+.ci-home-product .ci-product-cell{
+    height: 320px;
+}
+.ci-product-cell .ci-product-con{
+    width: 516px;
+    padding: 75px 42px 0 42px;
+}
+.ci-product-cell .ci-product-des{
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.ci-product-cell .ci-product-btn{
+    display: inline-block;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 40px;
+    background-color: #7e308e;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.ci-product-cell .ci-product-img{
+    width: 600px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.ci-home-inquiry{
+    padding-top: 32px;
+}
+.ci-home-inquiry .ci-inquiry-des{
+    width: 540px;
+    margin: 30px auto;
+    font-size: 16px;
+}
+.ci-home-inquiry .ci-inquiry-btn{
+    display: block;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    margin: 30px auto;
+    background-color: #7e308e;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+/* 页脚信息提交 */
+.ci-footer-content input[type=text]{
+    width: 234px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    border: solid 1px #3D3D3D;
+    box-shadow: 1px 1px 1px 0px #ccc;
+}
+.ci-footer-content textarea{
+    width: 516px;
+    height: 68px;
+    padding: 10px 12px;
+    border: solid 1px #3D3D3D;
+    box-shadow: 1px 1px 1px 0px #ccc;
+}
+.ci-footer-content button{
+    display: block;
+    width: 260px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 20px;
+    border: none;
+    background-color: #7e308e;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}

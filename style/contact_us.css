@@ -1,0 +1,88 @@
+.ci-contactUs-banner{
+    height: 165px;
+    background: url(../imgs/contact_us/banner.png) 50% no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.ci-contactUs-wrap{
+    width: 1198px;
+    margin: 4px auto;
+    border: solid 1px #EFEFEF;
+}
+.ci-contactUs-con{
+    width: 700px;
+    padding: 30px 20px;
+    float: left;
+}
+.ci-contactUs-con .ci-contactUs-item{
+    margin-top: 80px;
+}
+.ci-contactUs-con .ci-contactUs-item:first-child{
+    margin-top: 0;
+}
+.ci-contactUs-con .ci-contactUs-title{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #122A88;
+}
+.ci-contactUs-con .ci-contactUs-des{
+    line-height: 1.5;
+    font-size: 16px;
+}
+.ci-contactUs-con .ci-contactUs-des p{
+    margin-bottom: 20px;
+}
+.ci-contactUs-form{
+    width: 384px;
+    height: 394px;
+    margin-top: 8px;
+    margin-right: 8px;
+    background-color: #F9F9F9;
+
+    border: solid 1px #E4E4E4;
+    float: right;
+}
+.ci-contactUs-form .ci-contactUs-form-title{
+    height: 55px;
+    line-height: 55px;
+    padding: 0 16px;
+    background-color: #7E308E;
+    font-size: 14px;
+    color: #fff;
+}
+.ci-contactUs-form .ci-contactUs-form-con{
+    height: 235px;
+    height: 197px;
+    padding: 23px;
+}
+.ci-contactUs-form-con input{
+    width: 308px;
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: solid 1px #E4E4E4;
+    border-radius: 4px;
+}
+.ci-contactUs-form-con input.input-shot{
+    width: 138px;
+}
+.ci-contactUs-form-con textarea{
+    width: 308px;
+    height: 65px;
+    padding: 10px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+.ci-contactUs-form-con button{
+    display: block;
+    width: 124px;
+    height: 32px;
+    margin-top: 20px;
+    background-color: #7E308E;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}

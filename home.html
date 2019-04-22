@@ -5,8 +5,10 @@
     <link href="style/reset.css" rel="stylesheet">
     <link href="style/customPublic.css" rel="stylesheet">
     <link href="style/component.css" rel="stylesheet">
+    <link href="style/home.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 公共顶部 -->
     <div class="ci-top-warp">
         <div class="ci-top-con">
             <span class="marginR16"><i class="icon iconfont iconphone"></i>12321112232</span>
@@ -15,14 +17,36 @@
             <span class="floatR marginR24"><i class="icon iconfont iconcheck"></i><a class="marginR4" href="#">Sign In</a>  |  <a href="#" class="marginL4">Register</a></span>
         </div>
     </div>
+    <!-- 公共顶部 -->
+
+    <!-- 公共头部搜索 -->
     <div class="ci-menu-warp">
         <a href="#" class="ci-logo"></a>
         <ul class="ci-menu-list clearfix">
-            <li class="act"><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li class="act">
+                <div class="ci-drop-down">
+                    <a href="#">Home</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+            <li>                
+                <div class="ci-drop-down">
+                    <a href="#">Product</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+            <li>
+                <div class="ci-drop-down">
+                    <a href="#">Service</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+            <li>
+                <div class="ci-drop-down">
+                    <a href="#">Contact us</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
         </ul>
         <a href="#" class="ci-menu-btn">Post Buying Requst</a>
         <div class="ci-menu-search">
@@ -30,7 +54,147 @@
             <a href="#" class="ci-menu-search-btn"><i class="icon iconfont iconsearch"></i></a>
         </div>
     </div>
+    <!-- 公共头部搜索 -->
+    
+    <!-- 首页banner轮播（如不需要轮播可去掉js_pagination的div） -->
+    <div class="ci-banner-wrap js_slides" id="banner">
+        <div class="banner_bg js_slidesContainer">
+            <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+                <a href="javascript:;" class="banner_item" style="background-image: url(imgs/home/banner.jpg)">
+                </a>
+            </div>
+            <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+                <a href="javascript:;" class="banner_item" style="background-image: url(imgs/home/banner.jpg)">
+                </a>
+            </div>
+        </div>
+        <div class="carousel_dot js_pagination">
+            <a href="javascript:;" class="carousel_dot_span"></a>
+            <a href="javascript:;" class="carousel_dot_span"></a>
+        </div>
+    </div>
+    <!-- 首页banner轮播 -->
+
+    <!-- 首页内容区域 -->
+    <div class="ci-home-wrap">
+        <div class="ci-home-introduce clearfix">
+            <div class="ci-introduce-cell">
+                <i class="icon iconfont icongift1"></i>
+                <p class="marginT20 fontSize20 bold">Gift Card</p>
+                <div class="marginT20 fontSize10 textBlack8">Duis mollis,est non commodo luctus,nisi erat Porrtitor ligula,egat lacinia odio sem nec elit.</div>
+            </div>
+            <div class="ci-introduce-cell">
+                <i class="icon iconfont iconhome1"></i>
+                <p class="marginT20 fontSize20 bold">Gift Card</p>
+                <div class="marginT20 fontSize10 textBlack8">Duis mollis,est non commodo luctus,nisi erat Porrtitor ligula,egat lacinia odio sem nec elit.</div>
+            </div>
+            <div class="ci-introduce-cell">
+                <i class="icon iconfont iconsupport"></i>
+                <p class="marginT20 fontSize20 bold">Gift Card</p>
+                <div class="marginT20 fontSize10 textBlack8">Duis mollis,est non commodo luctus,nisi erat Porrtitor ligula,egat lacinia odio sem nec elit.</div>
+            </div>
+        </div>
+        <div class="ci-home-product">
+            <div class="ci-product-cell">
+                <div class="ci-product-con floatL">
+                    <p class="fontSize20 bold">Lorem ipsum dolor sit amet</p>
+                    <p class="ci-product-des">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    <a href="#" class="ci-product-btn">Learn more</a>
+                </div>
+                <div class="ci-product-img floatR">
+                    <img src="imgs/home/product1.jpg">
+                </div>
+            </div>
+            <div class="ci-product-cell">
+                <div class="ci-product-con floatR">
+                    <p class="fontSize20 bold">Lorem ipsum dolor sit amet</p>
+                    <p class="ci-product-des">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    <a href="#" class="ci-product-btn">Learn more</a>
+                </div>
+                <div class="ci-product-img floatL">
+                    <img src="imgs/home/product2.jpg">
+                </div>
+            </div>
+            <div class="ci-product-cell">
+                <div class="ci-product-con floatL">
+                    <p class="fontSize20 bold">Lorem ipsum dolor sit amet</p>
+                    <p class="ci-product-des">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    <a href="#" class="ci-product-btn">Learn more</a>
+                </div>
+                <div class="ci-product-img floatR">
+                    <img src="imgs/home/product3.jpg">
+                </div>
+            </div>
+            <div class="ci-product-cell">
+                <div class="ci-product-con floatR">
+                    <p class="fontSize20 bold">Lorem ipsum dolor sit amet</p>
+                    <p class="ci-product-des">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    <a href="#" class="ci-product-btn">Learn more</a>
+                </div>
+                <div class="ci-product-img floatL">
+                    <img src="imgs/home/product4.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="ci-home-inquiry">
+            <p class="fontSize20 bold textC">Lorem ipsum dolor sit amet</p>
+            <p class="ci-inquiry-des">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <a href="#" class="ci-inquiry-btn">Post Inquiry</a>
+            <img width="1200" height="548" src="imgs/home/map.jpg">
+        </div>
+    </div>
+    <!-- 首页内容区域 -->
+
+    <!-- 公共页脚 -->
+    <div class="ci-footer-wrap clearfix">
+        <div class="ci-footer-list">
+            <dl>
+                <dt>Products</dt>
+                <dd><a href="#">API</a></dd>
+                <dd><a href="#">OLED</a></dd>
+                <dd><a href="#">Solvent</a></dd>
+                <dd><a href="#">Catalyst</a></dd>
+                <dd><a href="#">Biomolecular</a></dd>
+                <dd><a href="#">Chiral compound</a></dd>
+                <dd><a href="#">Inorganic salt</a></dd>
+                <dd><a href="#">Reagent</a></dd>
+                <dd><a href="#">Building block</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">Services</a></dt>
+                <dd><a href="#">Custom synthesis</a></dd>
+                <dd><a href="#">Scale-up</a></dd>
+                <dd><a href="#">PunchOnt</a></dd>
+                <dd><a href="#">Procurement Out-</a></dd>
+                <dd><a href="#">sourcing</a></dd>
+            </dl>
+        </div>
+        <div class="ci-footer-show">
+            <h1>Contact Us</h1>
+            <div class="ci-footer-content">
+                <input type="text" placeholder="Fist name">
+                <input type="text" placeholder="Last name">
+                <input type="text" placeholder="Fist name">
+                <input type="text" placeholder="Fist name">
+                <textarea placeholder="Message"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- 公共页脚 -->
+
+    <!-- 底部信息 -->
+    <div class="ci-bottom-wrap">
+        <span>Copyright © 2017. </span>
+        <span class="marginL70">All Rights Reserved. Reproduction of any materials from the site is strictly forbidden without permission.</span>
+        <br>
+        <span>Products are sold exclusively through</span><span class="marginL70">Site Use Terms|Privacy</span>
+    </div>
+    <!-- 底部信息 -->
 
     <script type="text/javascript" src="font/iconfont.js"></script>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/common.js"></script>
+    <script type="text/javascript" src="script/home.js"></script>
 </body>
 </html>

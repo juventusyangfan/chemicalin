@@ -1,0 +1,17 @@
+.ci-faq-banner{
+    height: 165px;
+    background: url(../imgs/faq/banner.png) 50% no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.ci-faq-wrap{
+    width: 1198px;
+    margin: 4px auto;
+    border: solid 1px #EFEFEF;
+}
+.ci-faq-title{
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #122A88;
+}

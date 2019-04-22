@@ -1,13 +1,14 @@
+/* 公共顶部样式 */
 .ci-top-warp{
-    height: 30px;
-    line-height: 30px;
+    min-width: 1440px;
     background-color: #122a88;
-    color: #fff;
 }
 .ci-top-warp .ci-top-con{
-    width: 1400px;
+    width: 1440px;
+    height: 30px;
+    line-height: 30px;
     margin: 0 auto;
-    background-color: #122a88;
+    color: #fff;
 }
 .ci-top-con > span{
     height: 30px;
@@ -27,10 +28,13 @@
 .ci-top-con a{
     color: #fff;
 }
+/* 公共顶部样式 */
 
+/* 公共头部菜单 */
 .ci-menu-warp{
     width: 1360px;
     height: 80px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 .ci-menu-warp .ci-logo{
@@ -51,8 +55,35 @@
     margin-left: 60px;
     float: left;
 }
-.ci-menu-list li.act a,.ci-menu-list li a:hover{
-    color: #3c60ec;
+.ci-drop-down{
+    position: relative;
+    z-index: 1000;
+}
+.ci-drop-down:hover > a{
+    border-bottom: solid 1px #333;
+    font-weight: bolder;
+    color: #333;
+}
+.ci-drop-select{
+    display: none;
+    position: absolute;
+    padding: 10px 24px;
+    left: 0;
+    margin-left: -24px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+.ci-drop-down:hover .ci-drop-select{
+    display: block;
+}
+.ci-drop-select dd{
+    line-height: 2;
+}
+.ci-drop-select a{
+    white-space:nowrap
+}
+.ci-drop-select dd.act a,.ci-drop-select dd a:hover{
+    color: #7E308E;
 }
 .ci-menu-search{
     width: 400px;
@@ -82,7 +113,6 @@
     font-size: 26px;
     color: #7a7879;
 }
-
 .ci-menu-warp .ci-menu-btn{
     display: inline-block;
     width: 150px;
@@ -95,3 +125,53 @@
     float: right;
     text-align: center;
 }
+/* 公共头部菜单 */
+
+/* 公共页脚 */
+.ci-footer-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ci-footer-wrap .ci-footer-list{
+    width: 460px;
+    padding: 30px 60px 30px 80px;
+    float: left;
+}
+.ci-footer-wrap .ci-footer-list dl{
+    width: 210px;
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 20px;
+    float: left;
+}
+.ci-footer-wrap .ci-footer-list dl dt{
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.ci-footer-wrap .ci-footer-show{
+    width: 600px;
+    padding: 30px 0;
+    float: right;
+}
+.ci-footer-wrap .ci-footer-show h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.ci-footer-wrap .ci-footer-show .ci-footer-content{
+    margin-top: 26px;
+}
+/* 公共页脚 */
+
+/* 底部样式 */
+.ci-bottom-wrap {
+    height: 60px;
+    padding: 6px 0;
+    background-color: #122A88;
+    text-align: center;
+    color: #fff;
+}
+.ci-bottom-wrap span{
+    display: inline-block;
+    margin-top: 10px;
+}
+/* 底部样式 */
