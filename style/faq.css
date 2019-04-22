@@ -15,3 +15,25 @@
     font-weight: bolder;
     color: #122A88;
 }
+.ci-faq-list{
+    padding: 16px;
+}
+.ci-faq-list dl{
+    height: 21px;
+    overflow: hidden;
+    transition: all .2s;
+}
+.ci-faq-list dt{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.ci-faq-list dl:first-child dt{
+    margin-top: 0;
+}
+.ci-faq-list dt i{
+    margin-right: 12px;
+}
+.ci-faq-list dd{
+    line-height: 1.5;
+    margin: 20px 30px;
+}

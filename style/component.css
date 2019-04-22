@@ -68,10 +68,21 @@
     display: none;
     position: absolute;
     padding: 10px 24px;
-    left: 0;
-    margin-left: -24px;
+    left: 50%;
+    margin-left: -60px;
     background-color: #fff;
     border: solid 1px #ccc;
+}
+.ci-drop-select::before{
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    margin-left: -6px;
+    top: -7px;
+    left: 50%;
+    background: url(../imgs/menuIcon.png) no-repeat;
 }
 .ci-drop-down:hover .ci-drop-select{
     display: block;
