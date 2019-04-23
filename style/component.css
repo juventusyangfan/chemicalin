@@ -138,6 +138,23 @@
 }
 /* 公共头部菜单 */
 
+/* 面包屑样式 */
+.ci-crumbs-warp{
+    width: 1180px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+    background-color: #F3F3F3;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #3C60EC;
+}
+.ci-crumbs-warp a,.ci-crumbs-warp span{
+    color: #3C60EC;    
+}
+/* 面包屑样式 */
+
 /* 公共页脚 */
 .ci-footer-wrap{
     width: 1200px;

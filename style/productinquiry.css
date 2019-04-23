@@ -1,0 +1,141 @@
+.ci-inquiry-wrap{
+    width: 1198px;
+    margin: 4px auto;
+    padding-bottom: 50px;
+    border: solid 1px #EFEFEF;
+}
+.ci-inquiry-con{
+    width: 770px;
+    padding: 14px 20px;
+    float: left;
+}
+.ci-inquiry-con .ci-inquiry-title{
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #122A88;
+}
+.ci-inquiry-con .ci-inquiry-form{
+    position: relative;
+}
+.ci-inquiry-form .product-img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid 1px #e5e5e5;
+    top: 16px;
+    right: 0;
+}
+.ci-inquiry-form .ci-inquiry-form-head{
+    width: 536px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-left: 54px;
+    border-bottom: solid 1px #E4E4E4;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.ci-inquiry-form .ci-inquiry-form-item {
+    margin-top: 30px;
+}
+.ci-inquiry-form-item .ci-inquiry-item-title{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: right;
+    float: left;
+}
+.ci-inquiry-form-item .ci-inquiry-block{
+    margin-left: 10px;
+    float: left;
+}
+.ci-inquiry-form-item .ci-inquiry-block label{
+    display: inline-block;
+    max-width: 440px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}
+.ci-inquiry-form-item .ci-inquiry-block input{
+    width: 286px;
+    height: 38px;
+    line-height: 38px;
+    border: solid 1px #e5e5e5;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.ci-inquiry-form-item .ci-inquiry-block select{
+    width: 108px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px;
+    padding: 0 10px;
+    border: solid 1px #999;
+    font-size: 14px;
+}
+.ci-inquiry-form-item .ci-inquiry-block textarea{
+    width: 402px;
+    height: 84px;
+    padding: 10px;
+    border: solid 1px #e5e5e5;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.ci-inquiry-form .ci-inquiry-form-btn{
+    display: block;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 45px;
+    margin-left: 170px;
+    background-color: #7E308E;
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+
+.ci-inquiry-info{
+    width: 300px;
+    height: 252px;
+    margin-top: 20px;
+    margin-right: 26px;
+    border: solid 1px #E4E4E4;
+    float: right;
+}
+.ci-inquiry-info .ci-inquiry-info-title{
+    height: 55px;
+    line-height: 55px;
+    padding: 0 16px;
+    background-color: #7E308E;
+    font-size: 14px;
+    color: #fff;
+}
+
+.ci-inquiry-info-con .ci-inquiry-info-item{
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.ci-inquiry-info-con .ci-inquiry-info-item:first-child{
+    margin-top: 16px;
+}
+.ci-inquiry-info-con .ci-inquiry-info-item i{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #e1e1e1;
+    vertical-align: -2px;
+}
+.ci-inquiry-info-con  span.iconVIP{
+    margin-left: 2px;
+    font-size: 18px;
+    color: #FFA900;
+    vertical-align: -2px;
+}

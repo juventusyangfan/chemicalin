@@ -105,6 +105,12 @@ table {
 }
 
 /* 文字颜色 */
+.textRed{
+    color: #fd4545!important;
+}
+.textBlue{
+    color: #3c60ec!important;
+}
 .textBlack8{
     color: #808080;
 }

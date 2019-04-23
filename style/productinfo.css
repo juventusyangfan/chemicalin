@@ -1,0 +1,181 @@
+.ci-productInfo-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ci-productInfo-head{
+    height: 200px;
+}
+.ci-productInfo-head .ci-productInfo-head-img{
+    width: 268px;
+    height: 198px;
+    border: solid 1px #e5e5e5;
+    float: left;
+}
+.ci-productInfo-head-title,.ci-productInfo-head-tips,.ci-productInfo-head-des{
+    width: 900px;
+    margin-left: 20px;
+    float: left;
+}
+.ci-productInfo-head .ci-productInfo-head-title{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.ci-productInfo-head .ci-productInfo-head-tips{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.ci-productInfo-head .ci-productInfo-head-tips span{
+    margin-left: 120px;
+}
+.ci-productInfo-head .ci-productInfo-head-tips span:first-child{
+    margin-left: 0;
+}
+.ci-productInfo-head .ci-productInfo-head-des{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+.ci-productInfo-head .ci-productInfo-head-des p{
+    height: 36px;
+    overflow: hidden;
+}
+.ci-productInfo-head .ci-productInfo-head-des .see-more{
+    margin-top: 10px;
+    margin-right: 50px;
+    color: #3C60EC;
+    float: right;
+}
+.ci-productInfo-head-des .see-more i{
+    margin-left: 4px;
+}
+.ci-productInfo-head .ci-productInfo-head-btn{
+    display: block;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #7E308E;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+.ci-productInfo-body{
+    margin-top: 30px;
+}
+.ci-productInfo-menu li{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    float: left;
+}
+.ci-productInfo-menu li.act a{
+    color: #3C60EC;
+}
+.ci-productInfo-body-con{
+    width: 1128px;
+    padding: 35px;
+    border: solid 1px #e5e5e5;
+}
+.ci-productInfo-body-con .ci-productInfo-body-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #122A88;
+}
+.ci-productInfo-body-table{
+    width: 820px;
+    margin-bottom: 40px;
+}
+.ci-productInfo-body-table table{
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 1px #e5e5e5;
+}
+.ci-productInfo-body-table table td{
+    height: 36px;
+    padding-left: 16px;
+    border: solid 1px #e5e5e5;
+    font-size: 12px;
+}
+.ci-productInfo-body-table table td.td-title{
+    background-color: #F7F7F7;
+    font-weight: bolder;
+}
+.ci-productInfo-body-table table td.td-higher{
+    height: 56px;
+}
+
+
+/* 气泡动画 */
+@-webkit-keyframes upbit {
+    from {
+        -webkit-transform: translate3d(0, 30px, 0);
+        opacity: .3
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes upbit {
+    from {
+        transform: translate3d(0, 30px, 0);
+        opacity: .3
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+/* 气泡样式 */
+.show-box{
+    display: none;
+    width: 800px;
+    right: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-top: 40px;
+    background-color: #F2F2F2;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.open .show-box{
+    display: block;
+}
+.ci-productInfo-head-des .show-box p{
+    height: 24px;
+    line-height: 2;
+}
+.show-box .triangle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+}
+.show-box .triangle::after{
+    content: "";
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #F2F2F2;
+    border-left: 8px solid transparent;
+    position: absolute;
+    top: -6px;
+    left: -8px;
+}
