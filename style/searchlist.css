@@ -1,0 +1,70 @@
+.ci-searchlist-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ci-searchlist-result{
+    height: 40px;
+    line-height: 40px;
+    margin: -10px 0 10px 0;
+    padding: 0 20px;
+    border: solid 1px #F4F3F1;
+}
+.ci-searchlist-item{
+    width: 100%;
+    height: 169px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #807D78;
+    float: left;
+}
+.ci-searchlist-item .ci-searchlist-list-img{
+    width: 150px;
+    height: 150px;
+    border: solid 1px #e5e5e5;
+    float: left;
+}
+.ci-searchlist-item .ci-searchlist-list-img img{
+    width: 150px;
+    height: 150px;
+}
+.ci-searchlist-list-title,.ci-searchlist-list-tips,.ci-searchlist-list-des{
+    width: 730px;
+    margin-left: 20px;
+    float: left;
+}
+.ci-searchlist-item .ci-searchlist-list-title{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.ci-searchlist-item .ci-searchlist-list-tips{
+    margin-top: 24px;
+    font-size: 12px;
+}
+.ci-searchlist-item .ci-searchlist-list-tips span{
+    margin-left: 120px;
+}
+.ci-searchlist-item .ci-searchlist-list-tips span:first-child{
+    margin-left: 0;
+}
+.ci-searchlist-item .ci-searchlist-list-des{
+    position: relative;
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.ci-searchlist-item .ci-searchlist-list-des p{
+    height: 36px;
+    word-break:break-all;
+    overflow: hidden;
+}
+.ci-searchlist-item .ci-searchlist-list-btn{
+    display: inline-block;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 20px;
+    background-color: #8A2D83;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    float: right;
+}
