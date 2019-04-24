@@ -9,6 +9,22 @@
     padding: 0 20px;
     border: solid 1px #F4F3F1;
 }
+.ci-searchlist-result .ci-searchlist-witch{
+    margin-right: 6px;
+    vertical-align: -8px;
+}
+.ci-searchlist-result i{
+    display: none;
+    font-size: 32px;
+}
+.ci-searchlist-result .witchON i.iconswitch-ON{
+    display: inline-block;
+    color: #13CE66;
+}
+.ci-searchlist-result .witchOFF i.iconswitch-OFF{
+    display: inline-block;
+    color: #999;
+}
 .ci-searchlist-item{
     width: 100%;
     height: 169px;
