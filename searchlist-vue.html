@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="font/iconfont.css" rel="stylesheet">
+    <link href="style/reset.css" rel="stylesheet">
+    <link href="style/customPublic.css" rel="stylesheet">
+    <link href="style/component.css" rel="stylesheet">
+    <link href="style/searchlist.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 公共顶部 -->
+    <div class="ci-top-warp">
+        <div class="ci-top-con">
+            <span class="marginR16"><i class="icon iconfont iconphone"></i>12321112232</span>
+            <span><i class="icon iconfont iconzhifeiji"></i>service@biocar.com</span>
+            <span class="floatR"><i class="icon iconfont iconinfo-circle-fill"></i>FAQ</span>
+            <span class="floatR marginR24"><i class="icon iconfont iconcheck"></i><a class="marginR4" href="#">Sign In</a>  |  <a href="#" class="marginL4">Register</a></span>
+        </div>
+    </div>
+    <!-- 公共顶部 -->
+
+    <!-- 公共头部搜索 -->
+    <div class="ci-menu-warp">
+        <a href="#" class="ci-logo"></a>
+        <ul class="ci-menu-list clearfix">
+            <li class="act">
+                <div class="ci-drop-down">
+                    <a href="#">Home</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+            <li>                
+                <div class="ci-drop-down">
+                    <a href="#">Product</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+            <li>
+                <div class="ci-drop-down">
+                    <a href="#">Service</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+            <li>
+                <div class="ci-drop-down">
+                    <a href="#">Contact us</a>
+                    <dl class="ci-drop-select"><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd><dd><a href="#">product name</a></dd></dl>
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="ci-menu-btn">Post Buying Requst</a>
+        <div class="ci-menu-search">
+            <input type="text">
+            <a href="#" class="ci-menu-search-btn"><i class="icon iconfont iconsearch"></i></a>
+        </div>
+    </div>
+    <!-- 公共头部搜索 -->
+
+    <!-- 面包屑 -->
+    <div class="ci-crumbs-warp">
+        <a href="#">Home</a> > <a href="#">Synonyms</a> > <a href="#">Products</a> > <span>Jujuboside</span>
+    </div>
+    <!-- 面包屑 -->
+    
+    <!-- 产品列表主体部分 -->
+    <div class="ci-searchlist-wrap" id="searchList">
+        <div class="ci-searchlist-result">3 results for keywords : <span class="textPurple">compound acid</span><span class="floatR"><a href="javascript:;" :class="['ci-searchlist-witch',witch]" @click="changeWitch"><i class="icon iconfont iconswitch-ON"></i><i class="icon iconfont iconswitch-OFF"></i></a>only show in stock</span></div>
+        <div class="page_loading" v-if="loading"></div>
+        <ul class="ci-searchlist-list clearfix" v-else>
+            <li class="ci-searchlist-item" v-for="item in list">
+                <div class="ci-searchlist-list-img"><img :src="item.img"></div>
+                <div class="ci-searchlist-list-title">{{item.title}}</div>
+                <div class="ci-searchlist-list-tips"><span v-for="cell in item.tips">{{cell}}</span></div>
+                <div class="ci-searchlist-list-des">
+                    <p>{{item.des}}</p>                
+                </div>
+                <a href="#" class="ci-searchlist-list-btn">Get Quote</a>
+            </li>
+        </ul>
+        <div class="page_container_wrap">
+            <vue-page @get-list="getList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+        </div>
+    </div>
+    <!-- 产品列表主体部分 -->
+
+    <!-- 公共页脚 -->
+    <div class="ci-footer-wrap clearfix">
+        <div class="ci-footer-list">
+            <dl>
+                <dt>Products</dt>
+                <dd><a href="#">API</a></dd>
+                <dd><a href="#">OLED</a></dd>
+                <dd><a href="#">Solvent</a></dd>
+                <dd><a href="#">Catalyst</a></dd>
+                <dd><a href="#">Biomolecular</a></dd>
+                <dd><a href="#">Chiral compound</a></dd>
+                <dd><a href="#">Inorganic salt</a></dd>
+                <dd><a href="#">Reagent</a></dd>
+                <dd><a href="#">Building block</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">Services</a></dt>
+                <dd><a href="#">Custom synthesis</a></dd>
+                <dd><a href="#">Scale-up</a></dd>
+                <dd><a href="#">PunchOnt</a></dd>
+                <dd><a href="#">Procurement Out-</a></dd>
+                <dd><a href="#">sourcing</a></dd>
+            </dl>
+        </div>
+        <div class="ci-footer-show">
+            <h1>Quick Link</h1>
+            <div class="ci-footer-content clearfix">
+                <a href="#" class="ci-footer-link"><img src="imgs/bottom1.jpg"></a>
+                <a href="#" class="ci-footer-link"><img src="imgs/bottom2.jpg"></a>
+                <a href="#" class="ci-footer-link"><img src="imgs/bottom3.jpg"></a>
+                <a href="#" class="ci-footer-link"><img src="imgs/bottom4.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 公共页脚 -->
+
+    <!-- 底部信息 -->
+    <div class="ci-bottom-wrap">
+        <span>Copyright © 2017. </span>
+        <span class="marginL70">All Rights Reserved. Reproduction of any materials from the site is strictly forbidden without permission.</span>
+        <br>
+        <span>Products are sold exclusively through</span><span class="marginL70">Site Use Terms|Privacy</span>
+    </div>
+    <!-- 底部信息 -->
+
+    <script type="text/javascript" src="font/iconfont.js"></script>
+    <script type="text/javascript" src="script/vue.js"></script>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/common.js"></script>
+    <script type="text/javascript" src="script/searchlist-vue.js"></script>
+</body>
+</html>

@@ -213,6 +213,7 @@
 }
 /* 底部样式 */
 
+/* 分页样式 */
 .page_container_wrap{
     padding: 40px 10px 20px 0;
     border-bottom: solid 1px  #e5e5e5;
@@ -252,3 +253,10 @@
     background-color:#f7f7f7;
     cursor:not-allowed
 }
+.page_loading{
+    width: 60px;
+    height: 60px;
+    margin: 80px auto 60px auto;
+    background: url("../imgs/loading.gif") no-repeat;
+}
+/* 分页样式 */
