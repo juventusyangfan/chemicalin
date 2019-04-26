@@ -126,6 +126,62 @@
             }
         });
     })(jQuery);
+
+    (function ($) {
+        var timeObj = null;
+        $.extend({
+            msgTips: function (options) {
+                var settings = {
+                    type: "success",
+                    icon: "",
+                    content: "成功",
+                    time: 1000,
+                    callback: null
+                };
+                $.extend(settings, options || {});
+                var msgTipsHtml = '';
+                if ($(".cjy-poplayer").length === 0) {
+                    msgTipsHtml = '<div class="cjy-bg" style="height: ' + $(document).outerHeight() + 'px;"></div><div class="cjy-msgTips"><p class="cjy-msgTips-inner">';
+                } else {
+                    msgTipsHtml = '<div class="cjy-msgTips"><p class="cjy-msgTips-inner">';
+                }
+                if (settings.type === "success") {
+                    settings.icon = "icongou";
+                } else if (settings.type === "warning") {
+                    settings.icon = "icongantanhao";
+                } else if (settings.type === "error") {
+                    settings.icon = "iconcha1";
+                }
+                msgTipsHtml += '<i class="icon iconfont ' + settings.icon + ' ' + settings.type + '"></i><span>' + settings.content + '</span></p></div>';
+                $("body").eq(0).append(msgTipsHtml);
+                if ($(".cjy-poplayer").length !== 0) {
+                    $(".cjy-bg").css("z-index", "101");
+                }
+                var ele = $(".cjy-msgTips");
+                ele.css({
+                    "left": ($(window).outerWidth() - ele.outerWidth()) / 2 + "px",
+                    "top": $(document).scrollTop() + ele.outerHeight() + "px",
+                    "z-index": 102
+                });
+                ele.fadeIn(400);
+                setTimeout(function () {
+                    ele.fadeOut(400, function () {
+                        ele.remove();
+                    });
+                    if ($(".cjy-poplayer").length == 0) {
+                        $(".cjy-bg").fadeOut(400, function () {
+                            $(".cjy-bg").remove();
+                        });
+                    } else {
+                        $(".cjy-bg").css("z-index", "99");
+                    }
+                    if (settings.callback !== null) {
+                        settings.callback();
+                    }
+                }, settings.time);
+            }
+        });
+    })(jQuery);
     
     //图片轮播公共方法
     $.fn.initPicPlayer = function () {

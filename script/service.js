@@ -1,7 +1,7 @@
 var vm = new Vue({
     el: '#service',
     data: {
-        requestData:{
+        requestData: {
             firstName: "",
             lastName: "",
             email: "",
@@ -13,8 +13,18 @@ var vm = new Vue({
         submit: function () {
             var formData = JSON.stringify(this.requestData);
 
-            $.post("ajaxUrl", formData, function (dataObj) {
-                dataObj
+            $.get("/json/formData.json", formData, function (dataObj) {
+                if (dataObj.code == 2000) {
+                    $.msgTips({
+                        type: "success",
+                        content: dataObj.msg
+                    });
+                } else {
+                    $.msgTips({
+                        type: "warning",
+                        content: dataObj.msg
+                    });
+                }
             });
         }
     }

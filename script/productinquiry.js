@@ -1,7 +1,7 @@
 var vm = new Vue({
     el: '#inquiry',
     data: {
-        requestData:{
+        requestData: {
             quantity1: "g",
             quantity2: "g",
             purity: "",
@@ -18,8 +18,18 @@ var vm = new Vue({
         submit: function () {
             var formData = JSON.stringify(this.requestData);
 
-            $.post("ajaxUrl", formData, function (dataObj) {
-                dataObj
+            $.get("/json/formData.json", formData, function (dataObj) {
+                if (dataObj.code == 2000) {
+                    $.msgTips({
+                        type: "success",
+                        content: dataObj.msg
+                    });
+                } else {
+                    $.msgTips({
+                        type: "warning",
+                        content: dataObj.msg
+                    });
+                }
             });
         }
     }
