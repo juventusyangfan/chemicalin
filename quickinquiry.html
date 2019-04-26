@@ -72,49 +72,49 @@
                     <div class="ci-inquiry-form-head">①<span class="marginL4">Product Requirements</span></div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>CAS NO.</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="CASNO" placeholder="请输入内容" style="width:404px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.CASNO" placeholder="请输入内容" style="width:404px;"></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Product Name</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="productName" placeholder="请输入内容" style="width:404px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.productName" placeholder="请输入内容" style="width:404px;"></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Quantity1</label>
-                        <div class="ci-inquiry-block"><input type="text"><select v-model="quantity1"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
+                        <div class="ci-inquiry-block"><input type="text"><select v-model="requestData.quantity1"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title">Quantity2</label>
-                        <div class="ci-inquiry-block"><input type="text"><select v-model="quantity2"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
+                        <div class="ci-inquiry-block"><input type="text"><select v-model="requestData.quantity2"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Purity</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="purity" placeholder="请输入内容" style="width:404px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.purity" placeholder="请输入内容" style="width:404px;"></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Shipping to</label>
-                        <div class="ci-inquiry-block"><select v-model="shippingTo" style="width:424px;margin-left: 0;"></select></div>
+                        <div class="ci-inquiry-block"><select v-model="requestData.shippingTo" style="width:424px;margin-left: 0;"></select></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title">Addtional Request</label>
-                        <div class="ci-inquiry-block"><textarea v-model="addtionalRequest" placeholder="More details may bring more precise quote to you. Like payment term, port, packing, and ect."></textarea></div>
+                        <div class="ci-inquiry-block"><textarea v-model="requestData.addtionalRequest" placeholder="More details may bring more precise quote to you. Like payment term, port, packing, and ect."></textarea></div>
                     </div>
 
                     <div class="ci-inquiry-form-head">②<span class="marginL4">Your Contacts</span></div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Your Name</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="firstName" placeholder="first name" style="width:185px;"><input type="text" v-model="lastName" placeholder="last name" style="width:185px;margin-left: 10px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.firstName" placeholder="first name" style="width:185px;"><input type="text" v-model="requestData.lastName" placeholder="last name" style="width:185px;margin-left: 10px;"></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Email</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="email" placeholder="请输入内容" style="width:404px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.email" placeholder="请输入内容" style="width:404px;"></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Company/Institution</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="company" placeholder="请输入内容" style="width:404px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.company" placeholder="请输入内容" style="width:404px;"></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title">Phone/Mobil</label>
-                        <div class="ci-inquiry-block"><input type="text" v-model="phone" placeholder="0086-027-xxxxxxx" style="width:404px;"></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.phone" placeholder="0086-027-xxxxxxx" style="width:404px;"></div>
                     </div>
                     <button class="ci-inquiry-form-btn">Submit</button>
                 </form>
@@ -193,6 +193,7 @@
 
     <script type="text/javascript" src="font/iconfont.js"></script>
     <script type="text/javascript" src="script/vue.js"></script>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
     <script type="text/javascript" src="script/quickinquiry.js"></script>
 </body>
 </html>

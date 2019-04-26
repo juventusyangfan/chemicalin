@@ -90,13 +90,15 @@
         </div>
         <div class="ci-contactUs-form">
             <div class="ci-contactUs-form-title">Tell us about your message</div>
-            <div class="ci-contactUs-form-con">
-                <input type="text" class="input-shot" placeholder="first name">
-                <input type="text" class="input-shot marginL8" placeholder="last name">
-                <input type="text" placeholder="Your Email">
-                <input type="text" placeholder="Your Company">
-                <textarea placeholder="Your Message"></textarea>
-                <button>Submit</button>
+            <div class="ci-contactUs-form-con" id="contactUs">
+                <form @submit.prevent="submit">
+                    <input type="text" class="input-shot" v-model="requestData.firstName" placeholder="first name">
+                    <input type="text" class="input-shot marginL8" v-model="requestData.lastName" placeholder="last name">
+                    <input type="text" v-model="requestData.email" placeholder="Your Email">
+                    <input type="text" v-model="requestData.company" placeholder="Your Company">
+                    <textarea v-model="requestData.message" placeholder="Your Message"></textarea>
+                    <button>Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -148,5 +150,8 @@
     <!-- 底部信息 -->
 
     <script type="text/javascript" src="font/iconfont.js"></script>
+    <script type="text/javascript" src="script/vue.js"></script>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/contact_us.js"></script>
 </body>
 </html>

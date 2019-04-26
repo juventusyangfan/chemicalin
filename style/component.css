@@ -1,12 +1,13 @@
 /* 公共顶部样式 */
 .ci-top-warp{
-    min-width: 1440px;
+    /* min-width: 1440px; */
     background-color: #122a88;
 }
 .ci-top-warp .ci-top-con{
-    width: 1440px;
+    max-width: 1400px;
     height: 30px;
     line-height: 30px;
+    padding: 0 20px;
     margin: 0 auto;
     color: #fff;
 }
@@ -32,7 +33,7 @@
 
 /* 公共头部菜单 */
 .ci-menu-warp{
-    width: 1360px;
+    max-width: 1360px;
     height: 80px;
     margin: 0 auto;
     padding: 0 20px;
@@ -50,14 +51,16 @@
     float: left;
 }
 .ci-menu-list li{
+    width: 100px;
     height: 80px;
     line-height: 80px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     float: left;
 }
 .ci-drop-down{
     position: relative;
     z-index: 1000;
+    text-align: center;
 }
 .ci-drop-down:hover > a{
     border-bottom: solid 1px #333;

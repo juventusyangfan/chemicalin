@@ -1,17 +1,12 @@
 var vm = new Vue({
-    el: '#inquiry',
+    el: '#contactUs',
     data: {
         requestData:{
-            quantity1: "g",
-            quantity2: "g",
-            purity: "",
-            shippingTo: "",
-            addtionalRequest: "",
             firstName: "",
             lastName: "",
             email: "",
             company: "",
-            phone: ""
+            message: ""
         }
     },
     methods: {
