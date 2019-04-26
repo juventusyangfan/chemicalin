@@ -311,5 +311,5 @@
                 this.$emit('get-list', this.currentPage);
             }
         },
-        template: '<div class="page_container"><div class="page_container_nav"><a href="javascript:;" class="page_up" @click="goPrePage()">上一页</a><span class="pageNumCon"><a href="javascript:;" class="page_num" v-for="i in showPageBtn" :class="{page_cur:i===currentPage}" v-if="i" @click="goPage(i)">{{i}}</a><span v-else class="page_elip">...</span></span><a href="javascript:;" class="page_down" @click="goNextPage()">下一页</a></div></div>'
+        template: '<div class="page_container"><div class="page_container_nav"><a href="javascript:;" class="page_up" @click="goPrePage()">Previous</a><span class="pageNumCon"><a href="javascript:;" class="page_num" v-for="i in showPageBtn" :class="{page_cur:i===currentPage}" v-if="i" @click="goPage(i)">{{i}}</a><span v-else class="page_elip">...</span></span><a href="javascript:;" class="page_down" @click="goNextPage()">Next</a></div></div>'
     });
