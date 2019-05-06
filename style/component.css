@@ -135,6 +135,7 @@
     margin-top: 18px;
     margin-left: 15px;
     background-color: #7e308e;
+    font-weight: bolder;
     color: #fff;
     float: right;
     text-align: center;
@@ -178,6 +179,9 @@
 .ci-footer-wrap .ci-footer-list dl dt{
     margin-bottom: 10px;
     font-weight: bolder;
+}
+.ci-footer-wrap .ci-footer-list dl dd{
+    font-size: 18px;
 }
 .ci-footer-wrap .ci-footer-show{
     width: 600px;
