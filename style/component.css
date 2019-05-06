@@ -100,6 +100,7 @@
     color: #7E308E;
 }
 .ci-menu-search{
+    position: relative;
     width: 400px;
     height: 42px;
     margin-top: 18px;
@@ -139,6 +140,25 @@
     color: #fff;
     float: right;
     text-align: center;
+}
+.ci-menu-search-list{
+    position: absolute;
+    background-color: #fff;
+    width: 400px;
+    left: -1px;
+    border: solid 1px #e5e5e5;
+    z-index: 100;
+}
+.ci-menu-search-list a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.ci-menu-search-list a:hover{
+    background-color: #3C60EC;
+    color: #fff;
 }
 /* 公共头部菜单 */
 

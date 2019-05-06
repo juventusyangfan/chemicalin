@@ -182,7 +182,7 @@
             }
         });
     })(jQuery);
-    
+
     //图片轮播公共方法
     $.fn.initPicPlayer = function () {
         var main = $(this);
@@ -297,3 +297,35 @@
         });
         return main;
     };
+
+    //顶部搜索筛选
+    var inputObj = null;
+    $(".ci-menu-search input").unbind().bind("input", function () {
+        var _key = $(this).val();
+        clearTimeout(inputObj);
+        inputObj = setTimeout(function () {
+            $.get("/json/searchData.json", {
+                key: _key
+            }, function (dataObj) {
+                if (dataObj.code == 2000) {
+                    var _html = '';
+                    for (var i = 0; i < dataObj.data.length; i++) {
+                        _html += '<li><a href="javascript:;">' + dataObj.data[i] + '</a></li>';
+                    }
+                    $(".ci-menu-search-list").html(_html).show();
+                    $(".ci-menu-search-list").find("a").unbind().bind("click", function () {
+                        var _val = $(this).html();
+                        $(".ci-menu-search input").val(_val);
+                        $(".ci-menu-search-list").hide();
+                    });
+                }
+            });
+        }, 500);
+    });
+    //点击空白区隐藏下拉框
+    $(document).mouseup(function (e) {
+        var _con = $('.ci-menu-search-list'); // 设置目标区域
+        if (!_con.is(e.target) && _con.has(e.target).length === 0) { // Mark 1
+            $('.ci-menu-search-list').hide();
+        }
+    });
