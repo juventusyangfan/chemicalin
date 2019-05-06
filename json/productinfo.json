@@ -1,0 +1,36 @@
+{
+    "code": 2000,
+    "data": {
+        "title": "5-Phenyl-1,3-thiazale-2-carbaldehyde",
+        "tips": ["CAS No.: 120-46-7", "Formula: C6H6O6", "Molecular Weight: 189.23368"],
+        "des": "Synoyms:BenzenaMine,4- (2H-1,2,3-triazol-2-yl)-,hydrochloride;BenzenaMine,4- (2H-1,2,3-triazol-2-yl)-,hydrochloride;BenzenaMine,4- (2H-1,2,3-triazol-2-yl)-,hydrochloride;benzenaMine,",
+        "img": "imgs/productShow.png",
+        "seeMore": "<p>Fmoc-Arg(Boc)2-OH</p><p>N-Fmoc-N',N''-diBoc-L-arginine</p><p>n-alpha-(9-fluorenylmethyloxycarbonyl)-n',n''-bis-tert-butyloxycarbonyl-l-arginine</p><p>n-alpha-(9-fluorenylmethoxycarbonyl)-n-omega1,n-omega2-di-t-butoxycarbonyl-l-arginine</p><p>n-alpha-fmoc-n-omega,n-omega'-bis-t-butoxycarbonyl-l-arginine</p><p>n-alpha-fmoc-ng,ng-diboc-l-arginine</p><p>fmoc-arginine(boc)2-oh</p><p>fmoc-l-arg(boc)2-oh</p><p>fmoc-n-omega,n-omega'-bis-boc-l-arginine</p><p>N~2~-[(9H-fluoren-9-ylmethoxy)carbonyl]-N~5~-(2,2,10,10-tetramethyl-4,8-dioxo-3,9-dioxa-5,7-diazaundecan-6-ylidene)-L-ornithine</p>",
+        "product_info": {
+            "componud": "chromomycin A3",
+            "purity": "95%",
+            "packing": "5mg",
+            "package": "4mg",
+            "lead_time": "7Days(s)",
+            "origin": "",
+            "loading_port": ""
+        },
+        "properties": {
+            "density": "1.43g/cm3",
+            "boiling_point": "1147.6℃ at 760 mmHg",
+            "flash_point": "311.1℃",
+            "refractive_index": "1.608",
+            "storage_condition": "2-8℃"
+        },
+        "safety_infomation": {
+            "symbol": "<img src=\"imgs/productinfo/eq1.png\">",
+            "signal_word": "",
+            "hazard": "",
+            "precautionry": ""
+        },
+        "documents": {
+            "MSDS": ""
+        }
+    },
+    "count": "86"
+}

@@ -139,3 +139,23 @@
     color: #FFA900;
     vertical-align: -2px;
 }
+
+.ci-inquiry-list{
+    position: absolute;
+    width: 424px;
+    max-height: 300px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+    overflow: auto;
+}
+.ci-inquiry-list li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.ci-inquiry-list li a:hover{
+    background-color: #3C60EC;
+    color: #fff;
+}

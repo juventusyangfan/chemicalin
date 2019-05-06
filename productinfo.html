@@ -63,36 +63,27 @@
     <!-- 面包屑 -->
     
     <!-- 商品详情主体部分 -->
-    <div class="ci-productInfo-wrap">
+    <div class="ci-productInfo-wrap" id="productInfo">
         <div class="ci-productInfo-head clearfix">
-            <div class="ci-productInfo-head-img"><img src="imgs/productShow.png"></div>
-            <div class="ci-productInfo-head-title">5-Phenyl-1,3-thiazale-2-carbaldehyde</div>
-            <div class="ci-productInfo-head-tips"><span>CAS No.: 120-46-7</span><span>Formula: C6H6O6</span><span>Molecular Weight: 189.23368</span></div>
-            <div class="ci-productInfo-head-des">
-                <p>Synonyms: BenzenaMine, 4-(2H-1,2,3-triazol-2-yl)-, hydrochloride;benzenaMine, 4-(2h-1,2,3-triazol-2-yl)-, hcl;4-(2H-1,2,3-Triazol-2-yl)aniline hydrochloride BenzenaMine, 4-(2H-1,2,3-triazol-2-yl)-, hydrochloride;benzenaMine, 4-(2h-1,2,3-triazol-2-yl)-...</p>
-                <a href="javascript:;" class="see-more">see more <i>></i></a>
+            <div class="ci-productInfo-head-img"><img :src="img"></div>
+            <div class="ci-productInfo-head-title">{{title}}</div>
+            <div class="ci-productInfo-head-tips"><span v-for="cell in tips">{{cell}}</span></div>
+            <div :class="['ci-productInfo-head-des',showMore?'open':'']">
+                <p>{{des}}</p>
+                <a href="javascript:;" class="see-more" @click="seeMoreFun()">see more <i>></i></a>
                 <div class="show-box">
                     <span class="triangle"></span>
-                    <p>Fmoc-Arg(Boc)2-OH</p>
-                    <p>N-Fmoc-N',N''-diBoc-L-arginine</p>
-                    <p>n-alpha-(9-fluorenylmethyloxycarbonyl)-n',n''-bis-tert-butyloxycarbonyl-l-arginine</p>
-                    <p>n-alpha-(9-fluorenylmethoxycarbonyl)-n-omega1,n-omega2-di-t-butoxycarbonyl-l-arginine</p>
-                    <p>n-alpha-fmoc-n-omega,n-omega'-bis-t-butoxycarbonyl-l-arginine</p>
-                    <p>n-alpha-fmoc-ng,ng-diboc-l-arginine</p>
-                    <p>fmoc-arginine(boc)2-oh</p>
-                    <p>fmoc-l-arg(boc)2-oh</p>
-                    <p>fmoc-n-omega,n-omega'-bis-boc-l-arginine</p>
-                    <p>N~2~-[(9H-fluoren-9-ylmethoxy)carbonyl]-N~5~-(2,2,10,10-tetramethyl-4,8-dioxo-3,9-dioxa-5,7-diazaundecan-6-ylidene)-L-ornithine</p>
+                    <div v-html="seeMore"></div>
                 </div>
             </div>
             <a href="#" class="ci-productInfo-head-btn">Get Quote</a>
         </div>
         <div class="ci-productInfo-body">
             <ul class="ci-productInfo-menu clearfix">
-                <li class="act"><a data-href="productInfo">Product info</a></li>
-                <li><a data-href="properties">Properties</a></li>
-                <li><a data-href="safetyInfo">Safety info</a></li>
-                <li><a data-href="documents">Documents</a></li>
+                <li class="act"><a data-href="productInfo" @click="proScroll('productInfo')">Product info</a></li>
+                <li><a data-href="properties" @click="proScroll('properties')">Properties</a></li>
+                <li><a data-href="safetyInfo" @click="proScroll('safetyInfo')">Safety info</a></li>
+                <li><a data-href="documents" @click="proScroll('documents')">Documents</a></li>
             </ul>
             <div class="ci-productInfo-body-con">
                 <div class="ci-productInfo-body-title" id="productInfo">Product info</div>
@@ -109,23 +100,23 @@
                         <tbody>
                             <tr>
                                 <td class="td-title">Componud</td>
-                                <td colspan="5" class="textBlue">chromomycin A3</td>
+                                <td colspan="5" class="textBlue">{{product_info.componud}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title">Purity</td>
-                                <td>95%</td>
+                                <td>{{product_info.purity}}</td>
                                 <td class="td-title">Packing</td>
-                                <td>5mg</td>
+                                <td>{{product_info.packing}}</td>
                                 <td class="td-title">package</td>
-                                <td>4mg</td>
+                                <td>{{product_info.package}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title">Lead Time</td>
-                                <td>7Days(s)</td>
+                                <td>{{product_info.lead_time}}</td>
                                 <td class="td-title">Origin</td>
-                                <td></td>
+                                <td>{{product_info.origin}}</td>
                                 <td class="td-title">Loading Port</td>
-                                <td></td>
+                                <td>{{product_info.loading_port}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -140,23 +131,23 @@
                         <tbody>
                             <tr>
                                 <td class="td-title">Density</td>
-                                <td>1.43g/cm3</td>
+                                <td>{{properties.density}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title">Boiling Point</td>
-                                <td>1147.6℃ at 760 mmHg</td>
+                                <td>{{properties.boiling_point}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title">Flash Point</td>
-                                <td>311.1℃</td>
+                                <td>{{properties.flash_point}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title">Refractive Index</td>
-                                <td>1.608</td>
+                                <td>{{properties.refractive_index}}</td>
                             </tr>
                             <tr>
-                                <td class="td-title">Density</td>
-                                <td>2-8℃</td>
+                                <td class="td-title">Storage Condition</td>
+                                <td>{{properties.storage_condition}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -171,19 +162,19 @@
                         <tbody>
                             <tr>
                                 <td class="td-title td-higher">Symbol</td>
-                                <td><img src="imgs/productinfo/eq1.png"></td>
+                                <td v-html="safety_infomation.symbol"></td>
                             </tr>
                             <tr>
                                 <td class="td-title td-higher">Signal word</td>
-                                <td></td>
+                                <td>{{safety_infomation.signal_word}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title td-higher">Hazard</td>
-                                <td></td>
+                                <td>{{safety_infomation.hazard}}</td>
                             </tr>
                             <tr>
                                 <td class="td-title td-higher">Precautionry</td>
-                                <td></td>
+                                <td>{{safety_infomation.precautionry}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -198,7 +189,7 @@
                         <tbody>
                             <tr>
                                 <td class="td-title">MSDS</td>
-                                <td></td>
+                                <td>{{documents.MSDS}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -254,7 +245,9 @@
     <!-- 底部信息 -->
 
     <script type="text/javascript" src="font/iconfont.js"></script>
+    <script type="text/javascript" src="script/vue.js"></script>
     <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/common.js"></script>
     <script type="text/javascript" src="script/productinfo.js"></script>
 </body>
 </html>

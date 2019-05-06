@@ -80,11 +80,11 @@
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Quantity1</label>
-                        <div class="ci-inquiry-block"><input type="text"><select v-model="requestData.quantity1"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.quantityVal1"><select v-model="requestData.quantity1"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title">Quantity2</label>
-                        <div class="ci-inquiry-block"><input type="text"><select v-model="requestData.quantity2"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
+                        <div class="ci-inquiry-block"><input type="text" v-model="requestData.quantityVal2"><select v-model="requestData.quantity2"><option>g</option><option>kg</option><option>mg</option><option>l</option><option>ml</option></select></div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Purity</label>
@@ -92,7 +92,16 @@
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title"><span class="textRed">*</span>Shipping to</label>
-                        <div class="ci-inquiry-block"><select v-model="requestData.shippingTo" style="width:424px;margin-left: 0;"></select></div>
+                        <div class="ci-inquiry-block">
+                            <!-- <select v-model="requestData.shippingTo" style="width:424px;margin-left: 0;">
+                                <option v-for="item in country" :value="item">{{item}}</option>
+                            </select> -->
+
+                            <input type="text" v-model="requestData.shippingTo" class="js_selInput" placeholder="请输入内容" @focus="showUl" style="width:404px;">
+                            <ul class="ci-inquiry-list" v-show="requestData.ulShow">
+                                <li v-for="item in selectList"><a @click="selectItem(item)">{{item}}</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="ci-inquiry-form-item clearfix">
                         <label class="ci-inquiry-item-title">Addtional Request</label>
