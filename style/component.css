@@ -72,9 +72,10 @@
     position: absolute;
     padding: 10px 24px;
     left: 50%;
-    margin-left: -60px;
     background-color: #fff;
     border: solid 1px #ccc;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, 0);
 }
 .ci-drop-select::before{
     content: ' ';
