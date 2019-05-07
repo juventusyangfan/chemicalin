@@ -12,6 +12,7 @@
 }
 .ci-service-con{
     width: 700px;
+    min-height: 400px;
     padding: 30px 20px;
     float: left;
 }
@@ -27,6 +28,7 @@
 }
 .ci-service-con .ci-service-des p{
     margin-bottom: 20px;
+    text-indent: 2em;
 }
 
 .ci-service-form,.ci-service-info{

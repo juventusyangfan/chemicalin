@@ -5,7 +5,7 @@
     <link href="style/reset.css" rel="stylesheet">
     <link href="style/customPublic.css" rel="stylesheet">
     <link href="style/component.css" rel="stylesheet">
-    <link href="style/contact_us.css" rel="stylesheet">
+    <link href="style/service.css" rel="stylesheet">
 </head>
 <body>
     <!-- 公共顶部 -->
@@ -57,31 +57,21 @@
     </div>
     <!-- 公共头部搜索 -->
 
-    <!-- 联系我们banner -->
-    <div class="ci-contactUs-banner"></div>
-    <!-- 联系我们banner -->
+    <!-- 服务banner -->
+    <div class="ci-service-banner"></div>
+    <!-- 服务banner -->
     
-    <!-- 联系我们主体部分 -->
-    <div class="ci-contactUs-wrap clearfix">
-        <div class="ci-contactUs-con">
-            <div class="ci-contactUs-item">
-                <p class="ci-contactUs-title">About us</p>
-                <div class="ci-contactUs-des">Chemicalin maintains one of the most extensive supplier networks in China and India with over 15,000 verified labs and manufacturers. Partnering with Chemicalin means that you could access this network with one single point of contact, removing communication barriers and the need for resources to maintain supplier relationships.</div>
-            </div>
-            <div class="ci-contactUs-item">
-                <p class="ci-contactUs-title">Contact us</p>
-                <p class="ci-contactUs-title">Chemicalin China Office</p>
-                <div class="ci-contactUs-des">
-                    <p>Biolake, 858 High-Tech Avenue, Optical Valley Zone, Wuhan Hubei, China. ZIP 430070</p>
-                    <p>TEL: +86 21-37990212</p>
-                    <p>FAX: +86 21 54361023</p>
-                    <p>Email:sales@Chemicalin.com</p>
-                </div>
+    <!-- 服务主体部分 -->
+    <div class="ci-service-wrap clearfix">
+        <div class="ci-service-con">
+            <p class="ci-service-title">Custom Synthesis</p>
+            <div class="ci-service-des">
+                <p>Chemicalin has been supporting tens of thousands of researchers to accomplish important innovations for years by means of efficient project evaluation, reliable project management, complex client support, and commitment to confidentiality.</p>
             </div>
         </div>
-        <div class="ci-contactUs-form">
-            <div class="ci-contactUs-form-title">Tell us about your message</div>
-            <div class="ci-contactUs-form-con" id="contactUs">
+        <div class="ci-service-form">
+            <div class="ci-service-form-title">Tell us about your message</div>
+            <div class="ci-service-form-con" id="service">
                 <form @submit.prevent="submit">
                     <input type="text" class="input-shot" v-model="requestData.firstName" placeholder="first name">
                     <input type="text" class="input-shot marginL8" v-model="requestData.lastName" placeholder="last name">
@@ -92,8 +82,31 @@
                 </form>
             </div>
         </div>
+        <div class="ci-service-info">
+            <div class="ci-service-info-title">Stuchem Co,.Ltd</div>
+            <div class="ci-service-info-con">
+                <div class="ci-service-info-item">
+                    <i class="icon iconfont iconet-card"></i>Certified Store<span class="icon iconfont iconVIP"></span>
+                </div>
+                <div class="ci-service-info-item">
+                    <i class="icon iconfont iconhome"></i>Custom-Made
+                </div>
+                <div class="ci-service-info-item">
+                    <i class="icon iconfont iconlocation2"></i>China JiangSu SuZhou
+                </div>
+                <div class="ci-service-info-item">
+                    <i class="icon iconfont icone-mail"></i>sevice@Struchem.com
+                </div>
+                <div class="ci-service-info-item">
+                    <i class="icon iconfont iconaui-icon-mobile"></i>13222423370
+                </div>
+                <div class="ci-service-info-item">
+                    <i class="icon iconfont iconphone-"></i>0512-63009836
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- 联系我们主体部分 -->
+    <!-- 服务主体部分 -->
 
     <!-- 公共页脚 -->
     <div class="ci-footer-wrap clearfix">
@@ -144,6 +157,6 @@
     <script type="text/javascript" src="script/vue.js"></script>
     <script type="text/javascript" src="script/jquery.min.js"></script>
     <script type="text/javascript" src="script/common.js"></script>
-    <script type="text/javascript" src="script/contact_us.js"></script>
+    <script type="text/javascript" src="script/service.js"></script>
 </body>
 </html>
